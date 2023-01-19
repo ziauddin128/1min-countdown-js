@@ -1,0 +1,21 @@
+<h2>1 minute countdown JS</h2> <br>
+
+<div id="countBox"></div>
+<script>
+    var countDown = setInterval(count,1000);
+    x = 60;
+    function count()
+    {
+      var result = document.getElementById("countBox");
+      x--;
+      if(x===0)
+      {
+        result.innerHTML = "Do your Task"; 
+        clearInterval(countDown);
+      }
+      else 
+      {
+        result.innerHTML = "Remaining "+x+" seconds";
+      }
+    }
+  </script>
